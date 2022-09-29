@@ -1,6 +1,6 @@
 
 import pandas
-df = pandas.read_csv(r'C:\Users\Windows\Documents\courses\GEOG_524\Lab2\1871433.csv',
+df = pandas.read_csv('1871433.csv',
                          usecols=["DATE","PRCP","SNOW","SNWD","TMAX","TMIN"],
                          parse_dates=["DATE"]).set_index("DATE")
 

@@ -1,5 +1,5 @@
 
-import pandas
+import pandas as pd
 df = pandas.read_csv('1871433.csv',
                          usecols=["DATE","PRCP","SNOW","SNWD","TMAX","TMIN"],
                          parse_dates=["DATE"]).set_index("DATE")
